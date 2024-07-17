@@ -6,7 +6,7 @@
  
  See Thomas' video and access example Lua scripts at https://www.youtube.com/watch?v=x8SMg33RRQ4
  
- Repository at 
+ Repository at https://github.com/rpmik/Lua-Yawman-Control-XCrafts-E175
 ]]
 -- use local to prevent other unknown Lua scripts from overwriting variables (or vice versa)
 local STICK_X = 0 
@@ -275,7 +275,7 @@ function multipressXCraftsE175_buttons()
 				set_pilots_head(0.024648999795318,1.51879799366,-11.603151321411,359.4375,-70.895484924316)
 				MULTI_SIXPACK_PRESSED = true
 			elseif sp3_pressed and not MULTI_SIXPACK_PRESSED then
-				-- FMS 777
+				-- FMS E175
 				set_pilots_head(-0.122503452003,1.3184984922409,-11.969388961792,0.29323375225067,-55.484268188477)
 				MULTI_SIXPACK_PRESSED = true
 			elseif sp4_pressed and not MULTI_SIXPACK_PRESSED then
