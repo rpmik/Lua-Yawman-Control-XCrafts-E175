@@ -195,6 +195,7 @@ function multipressXCraftsE175_buttons()
 				set_button_assignment(DPAD_RIGHT,"XCrafts/ERJ/LNAV")
 				set_button_assignment(DPAD_LEFT,"sim/autopilot/NAV") -- built-in XP12 command
 				set_button_assignment(DPAD_DOWN,"XCrafts/ERJ/APPCH")
+				set_button_assignment(DPAD_UP,"XCrafts/ERJ/VNAV")
 			end
 					
 			-- Flash Light
