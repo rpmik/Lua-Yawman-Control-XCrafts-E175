@@ -80,6 +80,5 @@ Please note that the E-Jets has a clicking sound even with a button technically 
 	* Right Bumper = Take Off Button (Check Config)
 
 # TODO
-* Finish 777 assignments. Original script was for the Felis 747-200.
-* ~~Reassign cockpit views~~
+* Finish E175 assignments.
 * Implement radio tuning
