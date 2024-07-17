@@ -2,7 +2,7 @@
 * Also see [the script for the Flight Factor 777-200 v2](https://github.com/rpmik/Lua-Yawman-Control-Flight-Factor-B772).
 
 # Requirements
-* [X-Plane 12](https://www.x-plane.com/) as I'm not testing this in X-Plane 11
+* [X-Plane 12](https://www.x-plane.com/) only
 * [XCrafts E175 for X-Plane 12](https://store.x-plane.org/Embraer-E175-by-X-Crafts_p_1727.html)
 * [FlyWithLua 2.8 for X-Plane 12](https://forums.x-plane.org/index.php?/files/file/82888-flywithlua-ng-next-generation-plus-edition-for-x-plane-12-win-lin-mac/)
 * [Yawman Arrow Controller](https://yawmanflight.com/)
