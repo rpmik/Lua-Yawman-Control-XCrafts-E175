@@ -244,16 +244,27 @@ function multipressXCraftsE175_buttons()
 		end
 		
 		if sp6_pressed then
+			set_button_assignment(DPAD_LEFT,"sim/none/none")
+			set_button_assignment(DPAD_RIGHT,"sim/none/none")
+			set_button_assignment(DPAD_CENTER,"sim/none/none")
 			if dpad_up_pressed then
 				meterE175Interaction("XCrafts/ERJ/VS_up_10", "XCrafts/ERJ/VS_up_100", 0.5) -- VS increments more slowly, so use 0.5 seconds until larger increment starts
 				DPAD_PRESSED = true
 			elseif dpad_down_pressed then
 				meterE175Interaction("XCrafts/ERJ/VS_dn_10", "XCrafts/ERJ/VS_dn_100", 0.5)
 				DPAD_PRESSED = true
+			elseif dpad_left_pressed then
+				meterE175Interaction("XCrafts/ERJ/FPA_dn_pt_one","XCrafts/ERJ/FPA_dn_one",0.5)
+				DPAD_PRESSED = true
+			elseif dpad_right_pressed then
+				meterE175Interaction("XCrafts/ERJ/FPA_up_pt_one","XCrafts/ERJ/FPA_up_one",0.5)
+				DPAD_PRESSED = true
 			end
 			
 			if not STILL_PRESSED then
 				set_button_assignment(RIGHT_BUMPER,"XCrafts/ERJ/VS")
+				set_button_assignment(DPAD_CENTER,"XCrafts/ERJ/FPA")
+				STILL_PRESSED = true
 			else
 				STILL_PRESSED = true
 			end
@@ -264,7 +275,7 @@ function multipressXCraftsE175_buttons()
 		if left_bumper_pressed then
 			set_button_assignment(SIXPACK_2,"sim/none/none")
 			set_button_assignment(SIXPACK_1,"sim/none/none")
-			set_button_assignment(RIGHT_BUMPER,"XCrafts/ERJ/VNAV")
+			--set_button_assignment(RIGHT_BUMPER,"XCrafts/ERJ/VNAV")
 			if not STILL_PRESSED then
 				set_button_assignment(WHEEL_UP,"sim/flight_controls/brakes_toggle_max")
 				set_button_assignment(WHEEL_DOWN,"sim/flight_controls/brakes_toggle_max")
