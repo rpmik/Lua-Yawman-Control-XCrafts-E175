@@ -248,16 +248,17 @@ function multipressXCraftsE175_buttons()
 			set_button_assignment(DPAD_RIGHT,"sim/none/none")
 			set_button_assignment(DPAD_CENTER,"sim/none/none")
 			if dpad_up_pressed then
-				meterE175Interaction("XCrafts/ERJ/VS_up_10", "XCrafts/ERJ/VS_up_100", 0.5) -- VS increments more slowly, so use 0.5 seconds until larger increment starts
+				-- VS Works oddly so single buttons don't work as it does elsewhere... 
+				meterE175Interaction("XCrafts/ERJ/VS_up_10", "XCrafts/ERJ/VS_up_100", 1) -- VS increments more slowly, so use 0.5 seconds until larger increment starts
 				DPAD_PRESSED = true
 			elseif dpad_down_pressed then
-				meterE175Interaction("XCrafts/ERJ/VS_dn_10", "XCrafts/ERJ/VS_dn_100", 0.5)
+				meterE175Interaction("XCrafts/ERJ/VS_dn_10", "XCrafts/ERJ/VS_dn_100", 1)
 				DPAD_PRESSED = true
 			elseif dpad_left_pressed then
-				meterE175Interaction("XCrafts/ERJ/FPA_dn_pt_one","XCrafts/ERJ/FPA_dn_one",0.5)
+				meterE175Interaction("XCrafts/ERJ/FPA_dn_pt_one","XCrafts/ERJ/FPA_dn_one",1)
 				DPAD_PRESSED = true
 			elseif dpad_right_pressed then
-				meterE175Interaction("XCrafts/ERJ/FPA_up_pt_one","XCrafts/ERJ/FPA_up_one",0.5)
+				meterE175Interaction("XCrafts/ERJ/FPA_up_pt_one","XCrafts/ERJ/FPA_up_one",1)
 				DPAD_PRESSED = true
 			end
 			
