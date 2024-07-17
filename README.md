@@ -19,7 +19,7 @@ Sixpack 1, 2, 3, 4, 5, and 6 are referred to as SP1, SP2, SP3 etc. These are the
 
 Some Yawman documentation refer to these as MF 1L (SP1), MF 1C (SP2), MF 1R (SP3), MF 2L (SP4), MF 2C (SP5), MF 2R (SP6)
 
-Please note that the E-Jets has a clicking sound even with a button technically has no assignment.
+Please note that the E-Jets has a clicking sound even with a button technically has no assignment. This script may work with other E-Jets but you'll have to adjust the ICAO code variable PLANE_ICAO, rename the main function, and rename the script.
 
 * DPAD Left = Zoom Out
 * DPAD Right = Zoom In
