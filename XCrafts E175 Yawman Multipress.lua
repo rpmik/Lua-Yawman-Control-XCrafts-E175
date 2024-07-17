@@ -54,9 +54,9 @@ local PauseIncrementFrameCounty = 0.0
 --[[
  The XCrafts E-175 is a bit different from other aircraft in that a command has to be issued repeatedly to increment. 
  So one cannot use a button assignment and hold that button down to increment in a reasonable manner. It'll increment
- once and stop until you press the button again. So we have to use command_once upon button press. But this means the
- command will be called EVERY frame, which causes incrementing at frame rate speeds. So we must meter the number of times
- the command for incrementing is called for so humans can increment in a manner they can predict.
+ once and stop until you press the button again. So we have to use command_once upon button press and hold. But this means the
+ command will be called EVERY frame while a button is held, which causes incrementing at frame rate speeds. So we must meter
+ the number of times the command for incrementing is called for so humans can increment in a manner they can predict.
 ]]
 function meterE175Interaction(strCommandName1, strCommandName2, floatSeconds)
 		-- Set metering based on current frame rate
@@ -193,7 +193,7 @@ function multipressXCraftsE175_buttons()
 			if not STILL_PRESSED then -- Do not constantly set the button assignment every frame
 				set_button_assignment(RIGHT_BUMPER,"XCrafts/ERJ/fdir_toggle")
 				set_button_assignment(DPAD_RIGHT,"XCrafts/ERJ/LNAV")
-				set_button_assignment(DPAD_LEFT,"sim/autopilot/NAV")
+				set_button_assignment(DPAD_LEFT,"sim/autopilot/NAV") -- built-in XP12 command
 				set_button_assignment(DPAD_DOWN,"XCrafts/ERJ/APPCH")
 			end
 					
@@ -234,6 +234,7 @@ function multipressXCraftsE175_buttons()
 		
 		if sp5_pressed then
 			if not STILL_PRESSED then
+				-- built-in XP12 commands are used in the E-175 for heading. More A/C should use built-in commands!
 				set_button_assignment(DPAD_UP,"sim/autopilot/heading_up")
 				set_button_assignment(DPAD_DOWN,"sim/autopilot/heading_down")
 				set_button_assignment(RIGHT_BUMPER,"sim/autopilot/heading")
