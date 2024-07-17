@@ -255,7 +255,7 @@ function multipressXCraftsE175_buttons()
 		if left_bumper_pressed then
 			set_button_assignment(SIXPACK_2,"sim/none/none")
 			set_button_assignment(SIXPACK_1,"sim/none/none")
-			set_button_assignment(RIGHT_BUMPER,"XCrafts/ERJ/AutoThrottle")
+			set_button_assignment(RIGHT_BUMPER,"XCrafts/ERJ/VNAV")
 			if not STILL_PRESSED then
 				set_button_assignment(WHEEL_UP,"sim/flight_controls/brakes_toggle_max")
 				set_button_assignment(WHEEL_DOWN,"sim/flight_controls/brakes_toggle_max")
