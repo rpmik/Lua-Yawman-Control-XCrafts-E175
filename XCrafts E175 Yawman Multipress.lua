@@ -58,7 +58,7 @@ local PauseIncrementFrameCounty = 0.0
  command will be called EVERY frame, which causes incrementing at frame rate speeds. So we must meter the number of times
  the command for incrementing is called for so humans can increment in a manner they can predict.
 ]]
-function meterInteraction(strCommandName1, strCommandName2, floatSeconds)
+function meterE175Interaction(strCommandName1, strCommandName2, floatSeconds)
 		-- Set metering based on current frame rate
 		DataRef("FrameRatePeriod","sim/operation/misc/frame_rate_period","writable")
 		CurFrame = FRAME_COUNT
@@ -167,10 +167,10 @@ function multipressXCraftsE175_buttons()
 	
 		if sp1_pressed then
 			if dpad_up_pressed then
-				meterInteraction("XCrafts/ERJ/SPD_up_1", "XCrafts/ERJ/SPD_up_10", 2.0)
+				meterE175Interaction("XCrafts/ERJ/SPD_up_1", "XCrafts/ERJ/SPD_up_10", 2.0)
 				DPAD_PRESSED = true
 			elseif dpad_down_pressed then
-				meterInteraction("XCrafts/ERJ/SPD_dn_1", "XCrafts/ERJ/SPD_dn_10", 2.0)
+				meterE175Interaction("XCrafts/ERJ/SPD_dn_1", "XCrafts/ERJ/SPD_dn_10", 2.0)
 				DPAD_PRESSED = true
 			end
 			
@@ -218,13 +218,13 @@ function multipressXCraftsE175_buttons()
 
 			if dpad_up_pressed then
 
-				meterInteraction("XCrafts/ERJ/ALT_up_100", "XCrafts/ERJ/ALT_up_1000", 2.0)
+				meterE175Interaction("XCrafts/ERJ/ALT_up_100", "XCrafts/ERJ/ALT_up_1000", 2.0)
 				
 				DPAD_PRESSED = true
 			
 			elseif dpad_down_pressed then
 					
-				meterInteraction("XCrafts/ERJ/ALT_dn_100", "XCrafts/ERJ/ALT_dn_1000", 2.0)
+				meterE175Interaction("XCrafts/ERJ/ALT_dn_100", "XCrafts/ERJ/ALT_dn_1000", 2.0)
 				
 				DPAD_PRESSED = true
 			
@@ -243,10 +243,10 @@ function multipressXCraftsE175_buttons()
 		
 		if sp6_pressed then
 			if dpad_up_pressed then
-				meterInteraction("XCrafts/ERJ/VS_up_10", "XCrafts/ERJ/VS_up_100", 0.5)
+				meterE175Interaction("XCrafts/ERJ/VS_up_10", "XCrafts/ERJ/VS_up_100", 0.5)
 				DPAD_PRESSED = true
 			elseif dpad_down_pressed then
-				meterInteraction("XCrafts/ERJ/VS_dn_10", "XCrafts/ERJ/VS_dn_100", 0.5)
+				meterE175Interaction("XCrafts/ERJ/VS_dn_10", "XCrafts/ERJ/VS_dn_100", 0.5)
 				DPAD_PRESSED = true
 			end
 			
