@@ -66,7 +66,7 @@ function meterE175Interaction(strCommandName1, strCommandName2, floatSeconds)
 		if not DPAD_PRESSED then
 			FrameRate = 1/FrameRatePeriod
 			-- Roughly calculate how many frames to wait before incrementing based on floatSeconds
-			GoFasterFrameRate = (floatSeconds * (FrameRate)) + CurFrame -- start five seconds of slow increments
+			GoFasterFrameRate = (floatSeconds * FrameRate) + CurFrame -- start five seconds of slow increments
 		end
 
 		if CurFrame < GoFasterFrameRate then
@@ -74,7 +74,7 @@ function meterE175Interaction(strCommandName1, strCommandName2, floatSeconds)
 				command_once(strCommandName1)
 				-- calculate frame to wait until continuing
 				-- if floatSeconds is 2 then we'll wait around 1 second before continuing so as to allow a single standalone increment
-				PauseIncrementFrameCount = ((floatSeconds/2) * (FrameRate)) + CurFrame
+				PauseIncrementFrameCount = ((floatSeconds/2) * FrameRate) + CurFrame
 			else
 				-- wait a beat with PauseIncrementFrameCount then continue
 				if (CurFrame > PauseIncrementFrameCount) and (CurFrame % 5) == 0 then
