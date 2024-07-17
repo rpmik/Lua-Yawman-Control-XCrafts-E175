@@ -39,6 +39,7 @@ Please note that the E-Jets has a clicking sound even with a button technically 
 * SP 2 plus
 	* DPAD Down = Approach Button
 	* DPAD Left = Localizer Button (I think)
+	* DPAD Up = VNAV Button
 	* DPAD Right = LNAV Button
 	* Right Bumper = Flight Director
 	* SP5 = Red Flash Light
