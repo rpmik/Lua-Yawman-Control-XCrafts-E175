@@ -167,7 +167,7 @@ function multipressXCraftsE175_buttons()
 	
 		if sp1_pressed then
 			if dpad_up_pressed then
-				meterE175Interaction("XCrafts/ERJ/SPD_up_1", "XCrafts/ERJ/SPD_up_10", 2.0)
+				meterE175Interaction("XCrafts/ERJ/SPD_up_1", "XCrafts/ERJ/SPD_up_10", 2.0) -- at around two seconds, use larger increment
 				DPAD_PRESSED = true
 			elseif dpad_down_pressed then
 				meterE175Interaction("XCrafts/ERJ/SPD_dn_1", "XCrafts/ERJ/SPD_dn_10", 2.0)
@@ -218,7 +218,7 @@ function multipressXCraftsE175_buttons()
 
 			if dpad_up_pressed then
 
-				meterE175Interaction("XCrafts/ERJ/ALT_up_100", "XCrafts/ERJ/ALT_up_1000", 2.0)
+				meterE175Interaction("XCrafts/ERJ/ALT_up_100", "XCrafts/ERJ/ALT_up_1000", 2.0) -- after around 2 seconds, increment more quickly
 				
 				DPAD_PRESSED = true
 			
@@ -243,7 +243,7 @@ function multipressXCraftsE175_buttons()
 		
 		if sp6_pressed then
 			if dpad_up_pressed then
-				meterE175Interaction("XCrafts/ERJ/VS_up_10", "XCrafts/ERJ/VS_up_100", 0.5)
+				meterE175Interaction("XCrafts/ERJ/VS_up_10", "XCrafts/ERJ/VS_up_100", 0.5) -- VS increments more slowly, so use 0.5 seconds until larger increment starts
 				DPAD_PRESSED = true
 			elseif dpad_down_pressed then
 				meterE175Interaction("XCrafts/ERJ/VS_dn_10", "XCrafts/ERJ/VS_dn_100", 0.5)
