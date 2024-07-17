@@ -63,7 +63,7 @@ Please note that the E-Jets has a clicking sound even with a button technically 
 	* SP4 = Overhead panel
 	* SP5 = Pilot's View of Throttles, Speed Brake, Fuel etc
 	* SP6 = Cabin Lights Panels
-	* Right Bumper = MCP Captain's AP Disconnect
+	* Right Bumper = VNAV
 	
 * DPAD Up plus
 	* Wheel Up = Flaps Up
