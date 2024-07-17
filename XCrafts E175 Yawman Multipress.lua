@@ -107,7 +107,7 @@ function multipressXCraftsE175_buttons()
 			set_button_assignment(LEFT_BUMPER, "sim/none/none") -- multifunction
 			set_button_assignment(RIGHT_BUMPER, "sim/none/none") -- multifunction
 			set_button_assignment(SIXPACK_1,"sim/none/none")
-			set_button_assignment(SIXPACK_2,"sim/flight_controls/brakes_regular")
+			set_button_assignment(SIXPACK_2,"sim/none/none")
 			set_button_assignment(SIXPACK_3,"sim/none/none")		
 			set_button_assignment(SIXPACK_4,"sim/none/none")
 			set_button_assignment(SIXPACK_5,"sim/none/none")
@@ -117,6 +117,7 @@ function multipressXCraftsE175_buttons()
 			set_button_assignment(POV_LEFT,"sim/view/glance_left")
 			set_button_assignment(POV_RIGHT,"sim/view/glance_right")
 			set_button_assignment(POV_CENTER,"sim/view/default_view")
+			set_button_assignment(THUMBSTICK_CLK,"sim/flight_controls/brakes_regular")
 
         end 
         
