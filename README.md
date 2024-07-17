@@ -24,7 +24,7 @@ Please note that the E-Jets has a clicking sound even with a button technically 
 * DPAD Left = Zoom Out
 * DPAD Right = Zoom In
 * DPAD Center = Chase or Aircraft's Default View
-* Sixpack #2 (SP2) = brakes regular hold
+* ~~Sixpack #2 (SP2) = brakes regular hold~~
 * POV Up = Pitch Trim Up
 * POV Down = Pitch Trim Down		
 * POV Left = Glance Left
