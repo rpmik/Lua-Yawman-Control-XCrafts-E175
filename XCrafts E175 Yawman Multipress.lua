@@ -51,6 +51,13 @@ local GoFasterFrameRate = 0.0
 local PauseIncrementFrameCounty = 0.0
 
 -- If aircraft's interactive Command increment is not continuous, use framerate to meter incrementing
+--[[
+ The XCrafts E-175 is a bit different from other aircraft in that a command has to be issued repeatedly to increment. 
+ So one cannot use a button assignment and hold that button down to increment in a reasonable manner. It'll increment
+ once and stop until you press the button again. So we have to use command_once upon button press. But this means the
+ command will be called EVERY frame, which causes incrementing at frame rate speeds. So we must meter the number of times
+ the command for incrementing is called for so humans can increment in a manner they can predict.
+]]
 function meterInteraction(strCommandName1, strCommandName2, floatSeconds)
 		-- Set metering based on current frame rate
 		DataRef("FrameRatePeriod","sim/operation/misc/frame_rate_period","writable")
