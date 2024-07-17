@@ -117,7 +117,7 @@ function multipressXCraftsE175_buttons()
 			set_button_assignment(POV_LEFT,"sim/view/glance_left")
 			set_button_assignment(POV_RIGHT,"sim/view/glance_right")
 			set_button_assignment(POV_CENTER,"sim/view/default_view")
-			set_button_assignment(THUMBSTICK_CLK,"sim/flight_controls/brakes_regular")
+			--set_button_assignment(THUMBSTICK_CLK,"sim/flight_controls/brakes_toggle_regular")
 
         end 
         
