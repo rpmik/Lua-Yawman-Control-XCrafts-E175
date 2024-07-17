@@ -196,6 +196,7 @@ function multipressXCraftsE175_buttons()
 				set_button_assignment(DPAD_LEFT,"sim/autopilot/NAV") -- built-in XP12 command
 				set_button_assignment(DPAD_DOWN,"XCrafts/ERJ/APPCH")
 				set_button_assignment(DPAD_UP,"XCrafts/ERJ/VNAV")
+				STILL_PRESSED = true
 			end
 					
 			-- Flash Light
@@ -239,8 +240,8 @@ function multipressXCraftsE175_buttons()
 				set_button_assignment(DPAD_UP,"sim/autopilot/heading_up")
 				set_button_assignment(DPAD_DOWN,"sim/autopilot/heading_down")
 				set_button_assignment(RIGHT_BUMPER,"sim/autopilot/heading")
+				STILL_PRESSED = true
 			end
-			STILL_PRESSED = true
 		end
 		
 		if sp6_pressed then
@@ -265,8 +266,6 @@ function multipressXCraftsE175_buttons()
 			if not STILL_PRESSED then
 				set_button_assignment(RIGHT_BUMPER,"XCrafts/ERJ/VS")
 				set_button_assignment(DPAD_CENTER,"XCrafts/ERJ/FPA")
-				STILL_PRESSED = true
-			else
 				STILL_PRESSED = true
 			end
 
