@@ -55,6 +55,9 @@ Please note that the E-Jets has a clicking sound even with a button technically 
 * SP6 plus
 	* DPAD Up = VS Down
 	* DPAD Down = VS Up
+	* DPAD Left = Flight Path Angle Down
+	* DPAD Right = Flight Path Angle Up
+	* DPAD Center = FPA Button
 	* Right Bumper = VS Button
 * LEFT Bumper then
 	* Wheel Up/Down = Brakes Max (Parking Brake)
