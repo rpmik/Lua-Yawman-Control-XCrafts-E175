@@ -48,7 +48,7 @@ local CHASE_VIEW = false
 
 local FRAME_COUNT = 0.0
 local GoFasterFrameRate = 0.0
-local PauseIncrementFrameCounty = 0.0
+local PauseIncrementFrameCount = 0.0
 
 -- If aircraft's interactive Command increment is not continuous, use framerate to meter incrementing
 --[[
