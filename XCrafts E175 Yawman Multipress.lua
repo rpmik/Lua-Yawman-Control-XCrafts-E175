@@ -100,20 +100,20 @@ function multipressXCraftsE175_buttons()
 
 		-- Base Config buttons that should almost always get reassigned except during a press
         if not STILL_PRESSED then -- avoid overwriting assignments during other activity
-			set_button_assignment(DPAD_UP,"sim/none/none")
-			set_button_assignment(DPAD_DOWN,"sim/none/none")
+			set_button_assignment(DPAD_UP,NoCommand)
+			set_button_assignment(DPAD_DOWN,NoCommand)
 			set_button_assignment(DPAD_LEFT,"sim/general/zoom_out_fast")
 			set_button_assignment(DPAD_RIGHT,"sim/general/zoom_in_fast")
-			set_button_assignment(WHEEL_UP, "sim/none/none")
-			set_button_assignment(WHEEL_DOWN, "sim/none/none")
-			set_button_assignment(LEFT_BUMPER, "sim/none/none") -- multifunction
-			set_button_assignment(RIGHT_BUMPER, "sim/none/none") -- multifunction
-			set_button_assignment(SIXPACK_1,"sim/none/none")
-			set_button_assignment(SIXPACK_2,"sim/none/none")
-			set_button_assignment(SIXPACK_3,"sim/none/none")		
-			set_button_assignment(SIXPACK_4,"sim/none/none")
-			set_button_assignment(SIXPACK_5,"sim/none/none")
-			set_button_assignment(SIXPACK_6,"sim/none/none")			
+			set_button_assignment(WHEEL_UP, NoCommand)
+			set_button_assignment(WHEEL_DOWN, NoCommand)
+			set_button_assignment(LEFT_BUMPER, NoCommand) -- multifunction
+			set_button_assignment(RIGHT_BUMPER, NoCommand) -- multifunction
+			set_button_assignment(SIXPACK_1,NoCommand)
+			set_button_assignment(SIXPACK_2,NoCommand)
+			set_button_assignment(SIXPACK_3,NoCommand)		
+			set_button_assignment(SIXPACK_4,NoCommand)
+			set_button_assignment(SIXPACK_5,NoCommand)
+			set_button_assignment(SIXPACK_6,NoCommand)			
 			set_button_assignment(POV_UP,"sim/flight_controls/pitch_trim_up")
 			set_button_assignment(POV_DOWN,"sim/flight_controls/pitch_trim_down")
 			set_button_assignment(POV_LEFT,"sim/view/glance_left")
@@ -248,9 +248,9 @@ function multipressXCraftsE175_buttons()
 		end
 		
 		if sp6_pressed then
-			set_button_assignment(DPAD_LEFT,"sim/none/none")
-			set_button_assignment(DPAD_RIGHT,"sim/none/none")
-			set_button_assignment(DPAD_CENTER,"sim/none/none")
+			set_button_assignment(DPAD_LEFT,NoCommand)
+			set_button_assignment(DPAD_RIGHT,NoCommand)
+			set_button_assignment(DPAD_CENTER,NoCommand)
 			if dpad_up_pressed then
 				-- VS Works oddly so single buttons don't work as it does elsewhere... 
 				meterE175Interaction("XCrafts/ERJ/VS_up_10", "XCrafts/ERJ/VS_up_100", 1) -- VS increments more slowly, so use 0.5 seconds until larger increment starts
@@ -276,8 +276,8 @@ function multipressXCraftsE175_buttons()
 
 -- parking brake			
 		if left_bumper_pressed then
-			set_button_assignment(SIXPACK_2,"sim/none/none")
-			set_button_assignment(SIXPACK_1,"sim/none/none")
+			set_button_assignment(SIXPACK_2,NoCommand)
+			set_button_assignment(SIXPACK_1,NoCommand)
 			--set_button_assignment(RIGHT_BUMPER,"XCrafts/ERJ/VNAV")
 			if not STILL_PRESSED then
 				set_button_assignment(WHEEL_UP,"sim/flight_controls/brakes_toggle_max")
@@ -330,8 +330,8 @@ function multipressXCraftsE175_buttons()
 				set_button_assignment(POV_UP,"sim/view/straight_up")
 				set_button_assignment(POV_DOWN,"sim/view/straight_down")
 		
-				set_button_assignment(DPAD_LEFT,"sim/none/none")
-				set_button_assignment(DPAD_RIGHT,"sim/none/none")
+				set_button_assignment(DPAD_LEFT,NoCommand)
+				set_button_assignment(DPAD_RIGHT,NoCommand)
 			end
 			
 			if dpad_left_pressed then
