@@ -248,9 +248,14 @@ function multipressXCraftsE175_buttons()
 		end
 		
 		if sp6_pressed then
-			set_button_assignment(DPAD_LEFT,NoCommand)
-			set_button_assignment(DPAD_RIGHT,NoCommand)
-			set_button_assignment(DPAD_CENTER,NoCommand)
+			if not STILL_PRESSED then
+				set_button_assignment(DPAD_LEFT,NoCommand)
+				set_button_assignment(DPAD_RIGHT,NoCommand)
+				set_button_assignment(DPAD_CENTER,NoCommand)
+				set_button_assignment(RIGHT_BUMPER,"XCrafts/ERJ/VS")
+				set_button_assignment(DPAD_CENTER,"XCrafts/ERJ/FPA")
+			end
+			
 			if dpad_up_pressed then
 				-- VS Works oddly so single buttons don't work as it does elsewhere... 
 				meterE175Interaction("XCrafts/ERJ/VS_up_10", "XCrafts/ERJ/VS_up_100", 1) -- VS increments more slowly, so use 0.5 seconds until larger increment starts
@@ -266,20 +271,16 @@ function multipressXCraftsE175_buttons()
 				DPAD_PRESSED = true
 			end
 			
-			if not STILL_PRESSED then
-				set_button_assignment(RIGHT_BUMPER,"XCrafts/ERJ/VS")
-				set_button_assignment(DPAD_CENTER,"XCrafts/ERJ/FPA")
-				STILL_PRESSED = true
-			end
-
+			STILL_PRESSED = true
 		end
 
 -- parking brake			
 		if left_bumper_pressed then
-			set_button_assignment(SIXPACK_2,NoCommand)
-			set_button_assignment(SIXPACK_1,NoCommand)
+
 			--set_button_assignment(RIGHT_BUMPER,"XCrafts/ERJ/VNAV")
 			if not STILL_PRESSED then
+				set_button_assignment(SIXPACK_2,NoCommand)
+				set_button_assignment(SIXPACK_1,NoCommand)
 				set_button_assignment(WHEEL_UP,"sim/flight_controls/brakes_toggle_max")
 				set_button_assignment(WHEEL_DOWN,"sim/flight_controls/brakes_toggle_max")
 			end
