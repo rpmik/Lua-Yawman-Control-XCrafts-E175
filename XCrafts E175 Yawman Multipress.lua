@@ -104,6 +104,7 @@ function multipressXCraftsE175_buttons()
 			set_button_assignment(DPAD_DOWN,NoCommand)
 			set_button_assignment(DPAD_LEFT,"sim/general/zoom_out_fast")
 			set_button_assignment(DPAD_RIGHT,"sim/general/zoom_in_fast")
+			set_button_assignment(DPAD_CENTER,NoCommand)
 			set_button_assignment(WHEEL_UP, NoCommand)
 			set_button_assignment(WHEEL_DOWN, NoCommand)
 			set_button_assignment(LEFT_BUMPER, NoCommand) -- multifunction
@@ -360,7 +361,7 @@ function multipressXCraftsE175_buttons()
 		end
 
 -- All buttons need to be released to end STILL_PRESSED phase
-		if not sp1_pressed and not sp2_pressed and not sp3_pressed and not sp4_pressed and not sp5_pressed and not sp6_pressed and not right_bumper_pressed and not left_bumper_pressed and not dpad_center_pressed and not dpad_down_pressed then
+		if not sp1_pressed and not sp2_pressed and not sp3_pressed and not sp4_pressed and not sp5_pressed and not sp6_pressed and not right_bumper_pressed and not left_bumper_pressed and not dpad_center_pressed and not dpad_down_pressed and not dpad_left_pressed and not dpad_right_pressed then
 			STILL_PRESSED = false
 		end
 
