@@ -50,6 +50,8 @@ local FRAME_COUNT = 0.0
 local GoFasterFrameRate = 0.0
 local PauseIncrementFrameCount = 0.0
 
+local NoCommand = "sim/none/none"
+
 -- If aircraft's interactive Command increment is not continuous, use framerate to meter incrementing
 --[[
  The XCrafts E-175 is a bit different from other aircraft in that a command has to be issued repeatedly to increment. 
