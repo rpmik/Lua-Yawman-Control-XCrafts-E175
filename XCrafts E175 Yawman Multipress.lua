@@ -110,7 +110,7 @@ function multipressXCraftsE175_buttons()
 			set_button_assignment(LEFT_BUMPER, NoCommand) -- multifunction
 			set_button_assignment(RIGHT_BUMPER, NoCommand) -- multifunction
 			set_button_assignment(SIXPACK_1,NoCommand)
-			set_button_assignment(SIXPACK_2,NoCommand)
+			set_button_assignment(SIXPACK_2,"sim/flight_controls/brakes_regular")
 			set_button_assignment(SIXPACK_3,NoCommand)		
 			set_button_assignment(SIXPACK_4,NoCommand)
 			set_button_assignment(SIXPACK_5,NoCommand)
